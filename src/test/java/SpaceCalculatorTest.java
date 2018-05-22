@@ -46,8 +46,15 @@ public class SpaceCalculatorTest {
     // Test using org.unit that when you use the method calculateAgeOnPlanet method, passing in the arguments of
 //  the planet Enum Saturn & the age 27, you get 0.9168860458 back, with a delta value of 0.01.
     @Test
-    public static void canGetAgeOnJupiter(){
+    public static void canGetAgeOnSaturn(){
         assertEquals(0.9168860458, SpaceCalculator.calculateAgeOnPlanet(Planet.SATURN, 27), 0.01);
+    }
+
+    // Test using org.unit that when you use the method calculateAgeOnPlanet method, passing in the arguments of
+//  the planet Enum Uranus & the age 27, you get 0.32136412261 back, with a delta value of 0.01.
+    @Test
+    public static void canGetAgeOnUranus(){
+        assertEquals(0.32136412261, SpaceCalculator.calculateAgeOnPlanet(Planet.URANUS, 27), 0.01);
     }
 
 
