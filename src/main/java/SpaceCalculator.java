@@ -23,6 +23,8 @@ public class SpaceCalculator {
             ageOnPlanet = (age / 1.8808158);
         } else if (planet == Planet.JUPITER){
             ageOnPlanet = (age / 11.862615);
+        } else if (planet == Planet.SATURN){
+            ageOnPlanet = (age / 29.447498);
         }
         return ageOnPlanet;
     }
