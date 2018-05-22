@@ -1,19 +1,14 @@
 public class SpaceCalculator {
 
-//    Earth: Orbital period 365.25 Earth days, or 31,557,600 seconds
-//    Mercury: Orbital period 0.2408467 Earth years
-//    Venus: Orbital period 0.61519726 Earth years
-//    Mars: Orbital period 1.8808158 Earth years
-//    Jupiter: Orbital period 11.862615 Earth years
-//    Saturn: Orbital period 29.447498 Earth years
-//    Uranus: Orbital period 84.016846 Earth years
-//    Neptune: Orbital period 164.79132 Earth years
-//    Pluto: Orbital period 248.00 Earth years
 
+//    method that takes in a Planet enum and a double age.
+//    returns the inputted age divided by the value assigned to the inputted Planet
+//    within the enum Planet
     public static double calculateAgeOnPlanet(Planet planet, double age) {
         return age / planet.getOrbitalPeriod();
     }
 
+    //refactored above to use enum value
 //    public static double calculateAgeOnPlanet(Planet planet, double age) {
 //        double ageOnPlanet = 0;
 //        if (planet == Planet.EARTH){
@@ -38,7 +33,8 @@ public class SpaceCalculator {
 //        return ageOnPlanet;
 //    }
 
-
+//  method to give age in seconds added, which uses the method above to first calculate the age
+//    in years, then multiply this by the seconds in an earth year.
     public static double calculateAgeOnPlanetInSeconds(Planet planet, int age) {
          return calculateAgeOnPlanet(planet, age) * 31557600;
     }
