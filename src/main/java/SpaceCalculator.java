@@ -8,7 +8,6 @@ public class SpaceCalculator {
 //    Saturn: Orbital period 29.447498 Earth years
 //    Uranus: Orbital period 84.016846 Earth years
 //    Neptune: Orbital period 164.79132 Earth years
-//    And, depending on your feelings towards Pluto...
 //    Pluto: Orbital period 248.00 Earth years
 
 
@@ -18,6 +17,8 @@ public class SpaceCalculator {
             ageOnPlanet = age;
         } else if (planet == Planet.MERCURY){
             ageOnPlanet = (age / 0.2408467);
+        } else if (planet == Planet.VENUS){
+            ageOnPlanet = (age / 0.61519726);
         }
         return ageOnPlanet;
     }
