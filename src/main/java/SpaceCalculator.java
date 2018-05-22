@@ -29,6 +29,8 @@ public class SpaceCalculator {
             ageOnPlanet = (age / 84.016846);
         } else if (planet == Planet.NEPTUNE){
             ageOnPlanet = (age / 164.79132);
+        } else if (planet == Planet.PLUTO){
+            ageOnPlanet = (age / 248.00);
         }
         return ageOnPlanet;
     }
