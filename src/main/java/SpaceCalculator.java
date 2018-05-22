@@ -21,6 +21,8 @@ public class SpaceCalculator {
             ageOnPlanet = (age / 0.61519726);
         } else if (planet == Planet.MARS){
             ageOnPlanet = (age / 1.8808158);
+        } else if (planet == Planet.JUPITER){
+            ageOnPlanet = (age / 11.862615);
         }
         return ageOnPlanet;
     }
