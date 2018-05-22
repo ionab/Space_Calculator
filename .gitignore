@@ -35,3 +35,5 @@
 out/
 target/
 .idea_modules/
+.gitignore
+src/main/
