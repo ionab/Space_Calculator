@@ -22,4 +22,12 @@ public class SpaceCalculatorTest {
         assertEquals(112.10450465, SpaceCalculator.calculateAgeOnPlanet(Planet.MERCURY, 27), 0.01);
     }
 
+    // Test using org.unit that when you use the method calculateAgeOnPlanet method, passing in the arguments of
+//  the planet Enum Venus & the age 27, you get 43.8883619215 back, with a delta value of 0.01.
+    @Test
+    public static void canGetAgeOnVenus(){
+        assertEquals(43.8883619215, SpaceCalculator.calculateAgeOnPlanet(Planet.VENUS, 27), 0.01);
+    }
+
+
 }
