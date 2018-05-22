@@ -72,5 +72,15 @@ public class SpaceCalculatorTest {
     }
 
 
+    // Test using org.unit that when you use the method calculateAgeOnPlanetInSeconds method, passing in the arguments of
+//  the planet Enum Earth & the age 27, you get 852055200 back, with a delta value of 0.01.
+    @Test
+    public void canGetAgeOnEarthInSeconds(){
+        assertEquals(852055200, SpaceCalculator.calculateAgeOnPlanetInSeconds(Planet.EARTH, 27), 0.01);
+    }
+
+
+
+
 
 }

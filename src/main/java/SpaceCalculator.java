@@ -35,4 +35,8 @@ public class SpaceCalculator {
         return ageOnPlanet;
     }
 
+
+    public static double calculateAgeOnPlanetInSeconds(Planet planet, int age) {
+         return calculateAgeOnPlanet(planet, age) * 31557600;
+    }
 }
